@@ -1,0 +1,77 @@
+:root {
+    --primay-color: #cebea5;
+}
+
+#banner {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/anime-girl-pink-hair-closed-eyes-gloves-cute-WallpaperMaiden_.png);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* logo */
+#navigasi .navbar-brand>span {
+    color: var(--primay-color);
+}
+
+#navigasi .navbar-brand {
+    font-weight: 700;
+}
+
+/* Navigation Link */
+#navigasi .nav-item>a.nav-list {
+    color: white;
+}
+
+#navigasi .home-list-genre a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+#navigasi .home-list-genre a:hover {
+    color: var(--primay-color);
+}
+
+/* Pencarian */
+#navigasi button.tombol-search {
+    background-color: transparent;
+    border: 1px solid var(--primay-color);
+    border-radius: 10px;
+    color: #fff;
+}
+
+#navigasi button.tombol-search:hover {
+    border: 2px solid var(--primay-color);
+    color: var(--primay-color);
+}
+
+#navigasi button.tombol-search:active {
+    border: 1px inset var(--primay-color);
+}
+
+/* hamburger menu */
+#navigasi .navbar-toggler {
+    border-style: none;
+    border: 1px solid var(--primay-color);
+    padding: 10px;
+    background-color: transparent;
+}
+
+#navigasi .navbar-toggler:hover {
+    border: 2px solid var(--primay-color);
+}
+
+#navigasi .navbar-toggler:active {
+    border: 1px inset var(--primay-color);
+}
+
+/* input search */
+#navigasi input.form-control::placeholder {
+    color: #808080;
+}
