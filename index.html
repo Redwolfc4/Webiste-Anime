@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-            crossorigin="anonymous">
+            crossorigin="anonymous" />
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
         <title>Document</title>
     </head>
+
     <body>
         <header>
             <!-- Banner website -->
@@ -27,11 +28,14 @@
                     data-bs-theme="dark">
                     <div class="domain container-fluid">
                         <a class="navbar-brand" href="#">Koli<span>nime</span></a>
-                        <button class="navbar-toggler" type="button"
+                        <button
+                            class="navbar-toggler"
+                            type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse"
@@ -47,15 +51,14 @@
                                 <li class="nav-item">
                                     <a href="#">Genre</a>
                                 </li>
-
                             </ul>
                             <form class="d-flex" role="search">
                                 <input
                                     class="form-control me-2 bg-light text-dark"
                                     type="search"
-                                    placeholder="Cari Anime" aria-label="Search">
-                                <button class="tombol-search"
-                                    type="submit">Search</button>
+                                    placeholder="Cari Anime"
+                                    aria-label="Search" />
+                                <button class="tombol-search" type="submit">Search</button>
                             </form>
                         </div>
                     </div>
@@ -64,171 +67,252 @@
             <!-- akhir navigasi -->
         </header>
 
-        <!-- cards ongoing -->
-        <section class="cards-ongoing">
-            <div class="container justify-content-center">
-                <div class="row">
-                    <div class="col my-3">
-                        <h1 class="fs-3">Ongoing Anime</h1>
+        <main>
+            <!-- cards ongoing -->
+            <section class="cards-ongoing">
+                <div class="container justify-content-center">
+                    <div class="row">
+                        <div class="col my-3">
+                            <h1 class="fs-3">Ongoing Anime</h1>
+                            <div class="button-more">
+                                <a href>more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="row row-cols-2 row-cols-md-4 g-4 justify-content-center align-item-center">
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <!-- akhir  -->
 
-                <div
-                    class="row row-cols-2 row-cols-md-4 g-4 justify-content-center align-item-center text-center">
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
+            <!-- cards complete -->
+            <section class="cards-complete">
+                <div class="container justify-content-center">
+                    <div class="row">
+                        <div class="col my-3">
+                            <h1 class="fs-3">Completed Anime</h1>
+                        </div>
                     </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
+
+                    <div
+                        class="row row-cols-2 row-cols-md-4 g-4 justify-content-center align-item-center">
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <!-- akhir -->
 
-                <div class="row">
-                    <div class="col my-3">
-                        <h1 class="fs-3">Completed Anime</h1>
+            <!-- cards movie -->
+            <section class="cards-movie">
+                <div class="container justify-content-center">
+                    <div class="row">
+                        <div class="col my-3">
+                            <h1 class="fs-3">Movie Anime</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="row row-cols-2 row-cols-md-4 gx-4 gy-4 justify-content-center align-item-center">
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="cards col-6">
+                            <a class="anime-ku" href="#">
+                                <img
+                                    class="card-img-top"
+                                    src="https://via.placeholder.com/300x200"
+                                    alt="..." />
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <!-- akhir -->
+            </section>
+        </main>
 
-                <div
-                    class="row row-cols-2 row-cols-md-4 g-4 justify-content-center align-item-center text-center">
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col my-3">
-                        <h1 class="fs-3">Movie Anime</h1>
-                    </div>
-                </div>
-
-                <div
-                    class="row row-cols-2 row-cols-md-4 g-4 justify-content-center align-item-center text-center">
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                    <div class="card col-6">
-                        <img class="mycard"
-                            src="https://via.placeholder.com/300x200"
-                            alt="...">
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- akhir  -->
-
-        <!-- cards complete -->
-        <section class="cards-complete">
-
-        </section>
-        <!-- akhir -->
-        <footer>
-
-        </footer>
+        <footer></footer>
     </body>
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
