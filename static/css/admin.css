@@ -111,17 +111,14 @@ td {
     background-color: blue;
 }
 
-.data-view-anime tr {
-    width: 100%;
+.data-view-anime tr {}
+
+.data-view-anime td {
+    padding: 10px;
 }
 
 .data-view-anime td img {
     width: 100%;
-}
-
-td:nth-child(4),
-.sub-judul th:nth-child(1) {
-    /* width: 10%; */
 }
 
 
