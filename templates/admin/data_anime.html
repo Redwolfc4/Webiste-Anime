@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Anime</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/admin.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='JS/admin.js')}}"></script>
+</head>
+
+<body>
+    <!-- navigasi -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Admin</h1>
+        </div>
+        <div class="toggler-icon">
+            <ul id="hamburger-menu">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <ul class="link">
+            <li><a href="/admin">Home</a></li>
+            <li><a href="/admin/data_anime">Data Anime</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

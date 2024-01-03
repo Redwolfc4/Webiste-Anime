@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/admin.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='JS/admin.js')}}"></script>
+
+</head>
+
+<body>
+    <!-- navigasi -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Admin</h1>
+        </div>
+        <div class="toggler-icon">
+            <ul id="hamburger-menu">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <ul class="link">
+            <li><a href="/admin">Home</a></li>
+            <li><a href="/admin/data_anime">Data Anime</a></li>
+        </ul>
+    </nav>
+
+    <table class="data-view-anime">
+        <tr class="judul">
+            <th rowspan="2">Gambar</th>
+            <th rowspan="2">Judul Anime</th>
+            <th rowspan="2">Sinopsis</th>
+            <th colspan="3">link Download</th>
+        </tr>
+        <tr class="sub-judul">
+            <th>
+                <img src="{{url_for('static', filename='img/gdrive_icon.png')}}" alt="Google Drive.png" />
+            </th>
+            <th>
+                <img src="{{url_for('static', filename='img/flame.png')}}" alt="Google Drive.png" />
+                Acefile
+            </th>
+            <th>
+                <img src="https://th.bing.com/th?id=ODLS.a3ebd08b-f66f-4d94-96d9-4b8fccfc0eb7&w=32&h=32&qlt=90&pcl=fffffa&o=6&cb=1018&pid=1.2"
+                    alt="uptodown.jpg" />
+            </th>
+        </tr>
+        <tr>
+            <td><img src="{{url_for('static', filename='img/anime-girl-pink-hair-closed-eyes-gloves-cute-WallpaperMaiden_.png')}}"
+                    alt=""></td>
+            <td>kanojo no boukensha ni naritai</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minima illo laboriosam, vero
+                tenetur quia illum deleniti quae nesciunt vel rem ratione optio, hic, atque corporis labore ab sequi
+                impedit?</td>
+            <td>https://drive.google.com/</td>
+            <td>https://acefile.co/</td>
+            <td>https://id.uptodown.com/</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

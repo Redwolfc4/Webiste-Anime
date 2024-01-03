@@ -15,7 +15,7 @@ body {
 }
 
 #banner {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/anime-girl-pink-hair-closed-eyes-gloves-cute-WallpaperMaiden_.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/anime-girl-pink-hair-closed-eyes-gloves-cute-WallpaperMaiden_.png);
     height: 200px;
     background-position: center;
     background-size: cover;
@@ -127,6 +127,7 @@ a {
 .button-more a h5 {
     color: blue;
     border-bottom: 1px solid #ff000000;
+    text-transform: capitalize;
 
 }
 
@@ -146,13 +147,13 @@ a {
 }
 
 .img-content {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
     height: 100%;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 2rem;
 
 }
 
@@ -168,17 +169,21 @@ a {
 
 .img-title {
     position: absolute;
+    max-width: 300px;
+    max-height: 200px;
     width: 100%;
     height: 100%;
-    top: 176px;
+    top: 100%;
     transition: all .3s ease-in;
     background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0), rgb(5, 5, 5));
 }
 
 .img-title h3 {
     line-height: 2px;
+    font-size: 150%;
     position: relative;
-    top: 145px;
+    top: 75%;
+    text-transform: capitalize;
     color: white;
     text-align: center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -192,14 +197,6 @@ a {
 .content-card:hover img {
     transform: scale(1.1);
     transition: all .3s ease in;
-}
-
-/* nanti dihapus */
-.cards img {
-    max-width: 300px;
-    max-height: 200px;
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -226,9 +223,24 @@ section.footer {
 
 section.footer h6.footer-text span {
     color: var(--primay-color);
+    text-transform: capitalize;
 }
 
-@media only screen and (max-width: 768px) {
+section.footer .link p a {
+    color: inherit !important;
+}
+
+section.footer .link p a:hover {
+    color: var(--primay-color) !important;
+}
+
+.copyright span {
+    color: var(--primay-color);
+}
+
+
+
+@media (max-width: 768px) {
     .img-content {
         grid-template-columns: auto auto;
     }

@@ -1,0 +1,198 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primay-color: #cebea5;
+}
+
+body {
+    background-color: #e7e1e1;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    background-color: aqua;
+    box-shadow: 0px 6px rgba(78, 77, 77, 0.911);
+}
+
+nav .logo h1 {
+    margin-left: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primay-color);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 2px;
+}
+
+nav ul.link {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin-right: 1rem;
+}
+
+nav ul.link li a {
+    color: black !important;
+    transition: all .2s ease-in;
+    font-size: 15px;
+}
+
+nav ul.link li:hover a {
+    color: white !important;
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+    transition: all .2s ease-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* hamburger menu */
+.toggler-icon {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+nav .toggler-icon ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+nav .toggler-icon ul li {
+    list-style-type: none;
+    background-color: black;
+    width: 1rem;
+    height: 3px;
+    border-radius: 50px;
+    transition: all .3s;
+}
+
+.toggler-icon ul.change li {
+    background-color: white;
+    border: 1px solid black;
+    transition: all .3s;
+}
+
+ul.change li:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 0px);
+}
+
+ul.change li:nth-child(2) {
+    opacity: 0;
+}
+
+ul.change li:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, 0px);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.data-view-anime {
+    margin: 1rem;
+    background-color: blue;
+}
+
+.data-view-anime tr {
+    width: 100%;
+}
+
+.data-view-anime td img {
+    width: 100%;
+}
+
+td:nth-child(4),
+.sub-judul th:nth-child(1) {
+    /* width: 10%; */
+}
+
+
+
+/* responsif */
+@media (max-width: 768px) {
+
+    .toggler-icon {
+        display: flex;
+    }
+
+    nav {
+        position: relative;
+        top: 0;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    nav ul.link {
+        flex-direction: column;
+        max-width: 35%;
+        min-width: 35%;
+        top: 62px;
+        right: -500px;
+        height: 100vh;
+        background-color: aqua;
+        position: fixed;
+        justify-content: start;
+        gap: 0px;
+        margin: 0px;
+        transition: all .5s ease-in;
+    }
+
+    nav ul.active {
+        display: flex;
+        right: 0px;
+        transition: all .5s ease-out;
+
+    }
+
+    nav ul.link li:nth-child(1) {
+        text-align: center;
+        padding: 30px 0px;
+        border-bottom: 2px solid blue;
+    }
+
+    nav ul.link li:nth-last-child(1) {
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+    nav ul.link li a {
+        font-size: 25px;
+    }
+
+    nav ul.link li:hover a {
+        border-bottom: none;
+    }
+
+}
+
+@media (max-width: 425px) {
+    nav ul.link {
+        max-width: 45%;
+        transition: all .3s;
+    }
+}
+
+@media (max-width: 320px) {
+    nav ul.link {
+        max-width: 55%;
+        transition: all .3s;
+    }
+}
