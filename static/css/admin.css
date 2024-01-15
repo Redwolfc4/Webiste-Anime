@@ -108,13 +108,23 @@ td {
 
 .data-view-anime {
     margin: 1rem;
-    background-color: blue;
 }
 
-.data-view-anime tr {}
+.data-view-anime tr.sub-judul th {
+    padding-block: 5px;
+}
 
 .data-view-anime td {
     padding: 10px;
+}
+
+.data-view-anime td:not(img) {
+    text-align: justify;
+    font-size: 100%;
+}
+
+.data-view-anime td#gambar {
+    width: 15%;
 }
 
 .data-view-anime td img {
@@ -124,11 +134,54 @@ td {
 
 
 /* responsif */
+
+@media (max-width: 1200px) {
+    .data-view-anime td#gambar {
+        width: 12%;
+    }
+
+    .data-view-anime td:not(img) {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .data-view-anime td#gambar {
+        width: 12%;
+    }
+
+    .data-view-anime td:not(img) {
+        font-size: 80%;
+    }
+
+}
+
 @media (max-width: 768px) {
+
+    .data-view-anime {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .scroll {
+        overflow-x: auto;
+    }
+
+    .data-view-anime td:not(img) {
+        font-size: 80%;
+    }
+
+    .data-view-anime tr.data-anime {
+        height: 10px;
+        max-height: 20px;
+    }
 
     .toggler-icon {
         display: flex;
     }
+
+    /* TODO: Kerjakan scroolx tabel */
 
     nav {
         position: relative;
